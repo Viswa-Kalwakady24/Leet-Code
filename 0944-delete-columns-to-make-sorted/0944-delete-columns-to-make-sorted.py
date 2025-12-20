@@ -1,5 +1,5 @@
 class Solution:
-    def minDeletionSize(self,strs):
+    def minDeletionSize(self, strs: List[str]) -> int:
         count=0
         rows=len(strs)
         cols=len(strs[0])
@@ -9,3 +9,5 @@ class Solution:
                     count+=1
                     break
         return count
+
+        
