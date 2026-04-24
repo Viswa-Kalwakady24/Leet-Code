@@ -17,7 +17,9 @@ class Solution:
             if s[right]in freq:
                 if freq[s[right]]>0:
                     count+=1
-                freq[s[right]]-=1
+                    freq[s[right]]-=1
+                else:
+                    freq[s[right]]=-1
                 while count==len(t):
                     if (right-left+1)<min_len:
                         min_len=right-left+1
