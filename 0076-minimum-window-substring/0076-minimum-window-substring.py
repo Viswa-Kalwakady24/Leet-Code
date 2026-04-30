@@ -31,3 +31,4 @@ class Solution:
             return ""
         else:
             return s[start:start+min_len]
+        
