@@ -5,7 +5,7 @@ class Solution:
             sum=0
             for j in range(len(accounts[i])):
                 sum+=accounts[i][j]
-            res.append(sum)
+                res.append(sum)
         return max(res)
 
 
