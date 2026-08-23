@@ -1,7 +1,7 @@
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         n=len(nums)
-        ans=[]*(2*n)
+        ans=[]
         for i in range(n):
             ans.append(nums[i])
         for i in range(n):
