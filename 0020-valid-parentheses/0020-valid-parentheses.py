@@ -1,19 +1,16 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack=[]
-        for char in s:
-            if(char  in"{(["):
-                stack.append(char)
+        for i in s:
+            if i in "({[":
+                stack.append(i)
             else:
-                if(len(stack)==0):
+                if len(stack)==0:
                     return False
                 x=stack.pop()
-                if(x=='{' and char=='}') or (x=='(' and char==')') or (x=='[' and char==']'):
+                if (x=="(" and i==")") or (x=="{" and i=="}") or (x=="[" and i=="]"):
                     continue
                 else:
                     return False
         return len(stack)==0
-
-                
-
-        
+            
