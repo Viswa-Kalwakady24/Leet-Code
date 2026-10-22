@@ -1,5 +1,5 @@
 class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
+    def generate(self, numRows: int) -> list[list[int]]:
         r=[]
         for i in range(numRows):
             row=[1]*(i+1)
