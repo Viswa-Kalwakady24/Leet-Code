@@ -1,5 +1,5 @@
 class Solution:
-    def plusOne(self,digits:List[int])->List[int]:
+    def plusOne(self, digits: list[int]) -> list[int]:
         n=len(digits)
         for i in range(n-1,-1,-1):
             if digits[i]<9:
@@ -9,3 +9,6 @@ class Solution:
                 digits[i]=0
         digits.insert(0,1)
         return digits
+        
+
+        
