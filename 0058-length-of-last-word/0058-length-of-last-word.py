@@ -3,7 +3,4 @@ class Solution:
         s=s.strip()
         length=len(s.split()[-1])
         return length
-
-
-
         
