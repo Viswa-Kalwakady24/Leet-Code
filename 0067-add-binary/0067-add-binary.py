@@ -4,4 +4,5 @@ class Solution:
         y=int(b,2)
         s=x+y
         return bin(s)[2:]
+
         
